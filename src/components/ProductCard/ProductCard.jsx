@@ -5,7 +5,7 @@ const ProductCard = ({ product }) => {
   return (
     <Card sx={{ backgroundColor: "white", padding: 2, boxShadow: 3, textAlign: "center" }}>
       <img
-        src='/lenovo-laptop-y50.png'
+        src={`${import.meta.env.BASE_URL}lenovo-laptop-y50.png`}
         alt={product.name}
         style={{ width: "100%", maxHeight: "200px" }}
       />
