@@ -1,4 +1,4 @@
-import { Route, Routes, BrowserRouter } from "react-router-dom";
+import { Route, Routes, HashRouter } from "react-router-dom";
 import { routes } from "./constants/routes";
 import { Provider } from "react-redux";
 import { store } from "./redux/store/store";
@@ -9,7 +9,7 @@ import PrivateRoute from "./constants/privateRoute";
 function App() {
   return (
     <Provider store={store}>
-      <BrowserRouter>
+      <HashRouter>
         <Routes>
           <Route path="*" element={<NoteFound />} />
           <Route path="/" element={<Layout />}>
@@ -23,7 +23,7 @@ function App() {
             </Route>
           </Route>
         </Routes>
-      </BrowserRouter>
+      </HashRouter>
     </Provider>
   );
 }
