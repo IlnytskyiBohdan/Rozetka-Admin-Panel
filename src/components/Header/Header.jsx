@@ -1,3 +1,5 @@
 import { Box } from "@mui/material";
 
-export const Header = () => <Box component='img' src='/logo.svg' alt='Logo' />;
+export const Header = () => (
+  <Box component='img' src={`${import.meta.env.BASE_URL}logoForm.svg`} alt='Logo' />
+);
