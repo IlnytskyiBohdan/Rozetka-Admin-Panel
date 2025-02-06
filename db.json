@@ -1,0 +1,43 @@
+{
+  "users": [
+    {
+      "id": "1",
+      "userName": "admin",
+      "password": "bogdan"
+    }
+  ],
+  "products": [
+    {
+      "id": "b366",
+      "category": "laptop",
+      "name": "lenovo",
+      "quantity": "13",
+      "price": "1234",
+      "description": ""
+    },
+    {
+      "id": "83a7",
+      "category": "Phone",
+      "name": "iPhone",
+      "quantity": "3",
+      "price": "353",
+      "description": ""
+    },
+    {
+      "id": "f45c",
+      "category": "TV",
+      "name": "Samsung",
+      "quantity": "12",
+      "price": "945",
+      "description": ""
+    },
+    {
+      "id": "25d9",
+      "category": "Tablet",
+      "name": "Ipad Mini",
+      "quantity": "31",
+      "price": "894",
+      "description": ""
+    }
+  ]
+}
