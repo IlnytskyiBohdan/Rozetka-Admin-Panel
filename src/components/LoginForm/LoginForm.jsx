@@ -1,5 +1,5 @@
 import { useForm } from "react-hook-form";
-import { Container, Paper, Box } from "@mui/material";
+import { Box } from "@mui/material";
 import { useNavigate } from "react-router-dom";
 import InputText from "../InputText/InputText";
 import InputPassword from "../InputPassword/InputPassword";
@@ -31,30 +31,18 @@ const LoginForm = () => {
   };
 
   return (
-    <Container
-      sx={{
-        height: "100vh",
-        display: "flex",
-        justifyContent: "center",
-        alignItems: "center",
-      }}>
-      <Paper sx={{ padding: 4, borderRadius: 3, textAlign: "center", width: 400 }}>
-        <Box component='img' src={`${import.meta.env.BASE_URL}logoForm.svg`} alt='Logo' sx={{ mb: 8 }} />
-
-        <form onSubmit={handleSubmit(onSubmit)}>
-          <InputText
-            label='User Name'
-            name='userName'
-            register={register}
-            errors={errors}
-            sx={{ mb: 5 }}
-          />
-          <InputPassword register={register} errors={errors} sx={{ mb: 8 }} />
-          {error && <Box sx={{ color: "red", mb: 2 }}>{error}</Box>}
-          <ButtonLogin loading={loading} />
-        </form>
-      </Paper>
-    </Container>
+    <form onSubmit={handleSubmit(onSubmit)}>
+      <InputText
+        label='User Name'
+        name='userName'
+        register={register}
+        errors={errors}
+        sx={{ mb: 5 }}
+      />
+      <InputPassword register={register} errors={errors} sx={{ mb: 8 }} />
+      {error && <Box sx={{ color: "red", mb: 2 }}>{error}</Box>}
+      <ButtonLogin loading={loading} />
+    </form>
   );
 };
 
